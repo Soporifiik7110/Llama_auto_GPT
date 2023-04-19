@@ -7,13 +7,13 @@ while True:
     req2 = input(f"\n{Fore.WHITE}Request_2:")
     output = llm(
         f"Question: {req1}?\nAnswer:", 
-        max_tokens=256,
+        max_tokens=256, #set this to 128 this a modification that i have made on the llama.py
         temperature=0.8,
         stop=["Question:", "\n"], echo=False)
 
     output2 = llm(
         f"Question: {req2}?\nAnswer:",
-        max_tokens=256,
+        max_tokens=256,  #set this to 128 this a modification that i have made on the llama.py
         temperature=0.8,
         stop=["Question:", "\n"], echo=False)
     
